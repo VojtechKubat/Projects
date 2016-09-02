@@ -1,0 +1,15 @@
+﻿@model GameServer.Models.Character
+
+<div>
+    <h1>@Model.Name</h1>
+    <ul>
+        <li>@Model.Item</li>
+    </ul>
+
+    <form asp-controller="Home" asp-action="Create">
+    	<div>
+    		<input name="NewItem" />
+			<input type="submit" value="Add Item" />
+		</div>
+	</form>
+		
